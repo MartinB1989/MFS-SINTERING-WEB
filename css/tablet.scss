@@ -1,0 +1,270 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box ;
+    // overflow-x: hidden;
+}
+p, a, h1, h2, h3, h4, h5, h6, li{
+    letter-spacing: 1px;
+}
+
+textarea{
+    resize: none;
+}
+main{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+
+    .t1{
+        line-height: 28px;
+    }
+
+    .t3{
+        font-size: 21px;
+        line-height: 20px;
+    }
+
+    .t4{
+        font-size: 19px;
+        line-height: 20px;
+    }
+
+    .t9-y-medio{
+        font-size: 17px;
+    }
+
+    .t14, .t15{
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
+// --------MENÚ DE NAVEGACIÓN-----------
+    .nav-bar{
+        .nav-items{
+            height: 90%;
+            .nav-item{
+                font-size: 1.5rem;
+                margin: 25px 0;
+            }
+        }
+
+        .tel-lang{
+            margin-bottom: 100px;
+        }
+    }
+
+// --------SECCIÓN 0 HEADER-------------
+    .section-0, .emergente{
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        .box{
+            width: 40%;
+            height: 398px;
+            // margin: 2rem 0 2rem 20px;
+
+            .s-box{
+                width: 90%;
+            }
+        }
+        .d-none{
+            display: block;
+        }
+
+        .btn-none{
+            display: none;
+        }
+    }
+// -------- FORMULARIO EMERGENTE-----------
+    .emergente{
+        
+        .box-2{
+            width: 70%;
+
+            .s-box{
+                margin: auto;
+                width: 90%;
+            }
+        }
+    }
+
+// --------SECCIÓN 1 SINTERING-----------
+    .seccion-1{
+        .flex-2{
+            display: flex;
+            margin: auto;
+            width: 95%;
+
+            .grid-lista{
+                width: 50%;
+            }
+            .sectores-relevantes{
+                width: 50%;
+
+                .black-div{
+
+                    .sec-rel{
+                        margin-top: -45px;
+                    }
+                    .to-form{
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+
+// ----------CARRUSEL---------------
+    .carrousel{
+       .container{
+           display: flex;
+           
+           .slider{
+               width:95vw ;
+               padding: 20px ;
+           }
+           .button{
+               position: static;
+               display: block;
+
+               span{
+                   img{
+                       width: 100%;
+                       
+                   }
+               }
+           }
+
+           .previous{
+               margin-right: -0px;
+           }
+
+           .next{
+               margin-left: -30px;
+           }
+
+           .previous:hover span {
+            transform:  scale(1.1);
+        }
+        
+        .next:hover span {
+            transform:  scale(1.1);
+        }
+           .slider-nav{
+               display: none;
+           }
+       } 
+    }
+
+
+    .seccion-2{
+
+        height: 620px;
+        margin-bottom: 150px;
+        .flex-empresa{
+            width: 85% ;
+            margin: auto;
+            .esp-en-sin{
+                .p-text{
+                    padding-left: 0;
+                }
+            }
+
+            .empresa-img{
+                .como-trabajamos-tablet{
+                    display: block;
+                    width: 40%;
+                    align-self: flex-end;
+                    text-align: center;
+                }
+            }
+
+            .como-trabajamos-movil{
+                display: none;
+            }
+        }
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            align-items:baseline;
+            margin: auto;
+            width: 95%;
+            .card-1, .card-2, .card-3{
+                width: 33%;
+                height: 280px;
+
+                .sub{
+                    display: block;
+                    // font-size: 18px;
+                    margin: inherit 20px;
+                    padding: 0 30px;
+                }
+                
+            }
+
+            .middle-down-arrow-movil{
+                display: none;
+            }
+            .middle-down-arrow-desktop{
+                display: block;
+                margin: 0 -20px;
+                z-index: 88;
+                align-self: center;
+
+                img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+
+    .seccion-3{
+        width: 95%;
+        margin: auto;
+        .recursos, .capacidades{
+            width: 45%;
+
+            .box-inclinada{
+                padding: 20px;
+            }
+        }
+    }
+
+    .seccion-4{
+        display: flex;
+        justify-content: flex-end;
+        height: 400px;
+        background-size: 100% 100%;
+        
+        .clientes{
+            width: 60%;
+            margin-top: 20px;
+            
+            p{
+                width: 85%;
+            }
+        }
+    }
+
+    .seccion-5{
+        .bg-opaco{
+            .contacto{
+                display: grid;
+                width: fit-content;
+                overflow-x: hidden;
+                grid-template-columns: 50% 50%;
+                column-gap: 20px;
+                .clientes-title{
+                    grid-column: 1/3 ;
+                }
+            }
+        }
+    }
+}
